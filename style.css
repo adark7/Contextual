@@ -1,0 +1,101 @@
+/* 全局样式重置和基本设置 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9; /* 淡雅的背景色 */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 应用主容器布局，使用 Flexbox 实现主内容区和侧边栏的排列 */
+#app-container {
+    max-width: 1200px;
+    margin: 0 auto; /* 页面居中 */
+    display: flex; /* 启用 Flexbox 布局 */
+    flex-wrap: wrap; /* 允许换行 */
+    gap: 20px; /* 设置元素之间的间距 */
+}
+
+/* 头部样式 */
+header {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #2c3e50;
+}
+
+/* 主内容区（输入和阅读区） */
+main {
+    flex: 3; /* 占据可用空间的3份 */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 文本输入框样式 */
+#text-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* 让 padding 不会撑大宽度 */
+    margin-bottom: 15px;
+}
+
+/* 按钮样式 */
+#process-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db; /* 漂亮的蓝色 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer; /* 鼠标悬停时显示手形 */
+    transition: background-color 0.3s; /* 平滑的颜色过渡效果 */
+}
+
+#process-button:hover {
+    background-color: #2980b9; /* 悬停时颜色变深 */
+}
+
+/* 分割线样式 */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 30px 0;
+}
+
+/* 阅读区样式 */
+#reader-content {
+    border: 1px solid #eee;
+    padding: 15px;
+    min-height: 150px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+/* 侧边栏（单词详情）样式 */
+aside {
+    flex: 1; /* 占据可用空间的1份 */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 单词详情框 */
+#definition-box {
+    color: #555;
+    font-size: 14px;
+}

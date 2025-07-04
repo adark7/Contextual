@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 元数据定义，告诉浏览器页面信息 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 网页在浏览器标签页上显示的标题 -->
+    <title>中文学习阅读器 MVP</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <!-- 整个应用的主容器 -->
+    <div id="app-container">
+
+        <!-- 页面顶部的主标题 -->
+        <header>
+            <h1>中文学习阅读器</h1>
+            <p>将中文文本粘贴到下方，然后点击“开始阅读”</p>
+        </header>
+
+        <!-- 内容输入区 -->
+        <main>
+            <textarea id="text-input" rows="10" placeholder="在这里粘贴中文文本..."></textarea>
+            <button id="process-button">开始阅读</button>
+
+            <hr> <!-- 一条分割线 -->
+
+            <!-- 阅读区，处理后的文本将显示在这里 -->
+            <h2>阅读区</h2>
+            <div id="reader-content">
+                <p>这里将显示可以交互的文本。</p>
+            </div>
+        </main>
+
+        <!-- 侧边栏，用于显示单词定义 -->
+        <aside id="sidebar">
+            <h2>单词详情</h2>
+            <div id="definition-box">
+                <p>点击阅读区的单词以查看释义。</p>
+            </div>
+        </aside>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
